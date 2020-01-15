@@ -21,7 +21,15 @@
         <activity android:name=".lifecycle.B"/>
 
 
-        <activity android:name=".fragments_secret.MainBaseActivity">
+        <!--<activity android:name=".fragments_secret.MainBaseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <activity android:name=".fragment_transfer_data_viewmodel.MainBaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
