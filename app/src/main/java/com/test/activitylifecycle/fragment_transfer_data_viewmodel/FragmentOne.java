@@ -1,6 +1,5 @@
 package com.test.activitylifecycle.fragment_transfer_data_viewmodel;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,16 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-
 import com.test.activitylifecycle.R;
-
-import io.reactivex.Observable;
 
 public class FragmentOne extends Fragment {
     EditText editText;
@@ -37,8 +32,6 @@ public class FragmentOne extends Fragment {
                 viewModel.setText(editText.getText().toString());
             }
         });
-
-
         return view;
 
     }
